@@ -4,6 +4,23 @@
 	box-sizing: border-box;
 }
 
+hr {
+	height: 2px;
+	color: #ffffff;
+}
+
+.title {
+	color: #3f2323;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 50px;
+}
+
+.time {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 18px;
+	color: red;
+}
+
 body, html {
 	height: 100%;
 	font-family: sans-serif;
