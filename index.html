@@ -1,99 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Tides</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-</head>
-<body>
-	<script type="text/javascript">
-		"use script"
-		window.onload = function() {
-    	var station = prompt("Enter Station Number: ");
-    	var number = station;
-    	document.getElementById('station').innerHTML = number;
-		};
-	</script>
+	<head>
+		<title>Tides</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	</head>
+	<body>
+		<script type="text/javascript">
+			"use script"
+			window.onload = function() {
+    		var station = prompt("Enter Station Number: ");
+    		var number = station;
+    		document.getElementById('station').innerHTML = number;
+			};
+			</script>
+			<div class="limiter">
+				<div class="container-table100">
+					<div class="wrap-table100">
+						<p class="title">Tide Chart Powered by NOAA API</p>
+						<hr>
+						<br />
+						<div class="table">
+							<div class="row header">
+								<div class="cell">
+									Location
+								</div>
+								<div class="cell">
+									Station
+								</div>
+								<div class="cell">
+									High Tide
+								</div>
+								<div class="cell">
+									Low Tide
+								</div>
+							</div>
 
-	<div class="limiter">
-		<div class="container-table100">
-			<p class="title">Tide Chart Powered by NOAA API</p>
-			<div class="wrap-table100">
-				<hr>
-				<br />
-					<div class="table">
+							<div class="row">
+								<div class="cell" data-title="Location">
+									<h4>Location 1</h4>
+								</div>
+								<div class="cell" data-title="Station">
+									<h4 id="station"></h4>
+								</div>
+								<div class="cell" data-title="High Tide">
+									<h4 class="time">12:00 AM</h4>
+								</div>
+								<div class="cell" data-title="Low Tide">
+									<h4 class="time">1:00 AM</h4>
+								</div>
+							</div>
 
-						<div class="row header">
-							<div class="cell">
-								Location
+							<!-- # Commenting out because I really onlyneed one tide location at a time #
+							<div class="row">
+								<div class="cell" data-title="Location">
+									<h4>Location 2</h4>
+								</div>
+								<div class="cell" data-title="Station">
+									<h4 id="station"></h4>
+								</div>
+								<div class="cell" data-title="High Tide">
+									<h4>2:00 AM</h4>
+								</div>
+								<div class="cell" data-title="Low Tide">
+									<h4>3:00 AM</h4>
+								</div>
 							</div>
-							<div class="cell">
-								Station
-							</div>
-							<div class="cell">
-								High Tide
-							</div>
-							<div class="cell">
-								Low Tide
-							</div>
+
+							<div class="row">
+								<div class="cell" data-title="Location">
+									<h4>Location 3</h4>
+								</div>
+								<div class="cell" data-title="Station">
+									<h4 id="station"></h4>
+								</div>
+								<div class="cell" data-title="High Tide">
+									<h4>4:00 AM</h4>
+								</div>
+								<div class="cell" data-title="Low Tide">
+									<h4>5:00 AM</h4>
+								</div>
+							</div>-->
 						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Location">
-								<h4>Location 1</h4>
-							</div>
-							<div class="cell" data-title="Station">
-								<h4 id="station"></h4>
-							</div>
-							<div class="cell" data-title="High Tide">
-								<h4 class="time">12:00 AM</h4>
-							</div>
-							<div class="cell" data-title="Low Tide">
-								<h4 class="time">1:00 AM</h4>
-							</div>
-						</div>
-
-						<!-- # Commenting out because I really onlyneed one tide location at a time #
-						<div class="row">
-							<div class="cell" data-title="Location">
-								<h4>Location 2</h4>
-							</div>
-							<div class="cell" data-title="Station">
-								<h4 id="station"></h4>
-							</div>
-							<div class="cell" data-title="High Tide">
-								<h4>2:00 AM</h4>
-							</div>
-							<div class="cell" data-title="Low Tide">
-								<h4>3:00 AM</h4>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Location">
-								<h4>Location 3</h4>
-							</div>
-							<div class="cell" data-title="Station">
-								<h4 id="station"></h4>
-							</div>
-							<div class="cell" data-title="High Tide">
-								<h4>4:00 AM</h4>
-							</div>
-							<div class="cell" data-title="Low Tide">
-								<h4>5:00 AM</h4>
-							</div>
-						</div>-->
-
-					</div>
-					<br />
-						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLyjntiwKyd2aBUd7hEXoeJKwZYyaNYpBoqtK0wV3IYxitqA/viewform?embedded=true" height="800px" width="900px" frameborder="0" marginheight="0" marginwidth="0">Loading...
-						</iframe>
+						<br />
+						<iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSdLyjntiwKyd2aBUd7hEXoeJKwZYyaNYpBoqtK0wV3IYxitqA/viewform?embedded=true" height="800px" width="900px" frameborder="0" marginheight="0" marginwidth="0">Loading...
+					</iframe>
+				</div>
 			</div>
 		</div>
-	</div>
-
-</body>
+	</body>
 </html>

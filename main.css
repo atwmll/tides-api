@@ -9,10 +9,17 @@ hr {
 	color: #ffffff;
 }
 
+/* START my code */
+
 .title {
 	color: #3f2323;
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 50px;
+	text-align: center;
+}
+
+.form {
+	text-align: center;
 }
 
 .time {
@@ -20,6 +27,8 @@ hr {
 	font-size: 18px;
 	color: red;
 }
+
+/* END my code */
 
 body, html {
 	height: 100%;
