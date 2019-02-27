@@ -4,17 +4,22 @@
 	box-sizing: border-box;
 }
 
+/* START my code */
+
 hr {
 	height: 2px;
 	color: #ffffff;
 }
 
-/* START my code */
-
 .title {
 	color: #3f2323;
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 50px;
+	text-align: center;
+}
+
+.small-title {
+	color: #a00000;
 	text-align: center;
 }
 
