@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Tides</title>
+		<title>Weather Data</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<script type="text/javascript" src="script.js"></script>
 			<div class="limiter">
 				<div class="container-table100">
 					<div class="wrap-table100">
-						<p class="title">Tide Chart Powered by NOAA API</p>
+						<p class="title">Weather Powered by OpenWeatherMap.org</p>
 						<p class="small-title">(Class Project - Work-in-progress)</p>
 						<hr>
 						<br />
@@ -23,61 +24,36 @@
 									Location
 								</div>
 								<div class="cell">
-									Station
+									Temperature
 								</div>
 								<div class="cell">
-									High Tide
+									Conditions
 								</div>
 								<div class="cell">
-									Low Tide
+									Description
+								</div>
+								<div class="cell">
+									Wind (MPH)
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="cell" data-title="Location">
-									<h4>Location 1</h4>
+									<h4 class="alert" id="currentLocation"></h4>
 								</div>
-								<div class="cell" data-title="Station">
-									<h4 id="station"></h4>
+								<div class="cell" data-title="Temperature">
+									<h4 class="alert" id="currentTemp"></h4>
 								</div>
-								<div class="cell" data-title="High Tide">
-									<h4 class="time">12:00 AM</h4>
+								<div class="cell" data-title="Conditions">
+									<h4 class="alert" id="currentWeather"></h4>
 								</div>
-								<div class="cell" data-title="Low Tide">
-									<h4 class="time">1:00 AM</h4>
+								<div class="cell" data-title="Weather description">
+									<h4 class="alert" id="weatherDesc"></h4>
 								</div>
-							</div>
-
-							<!-- # Commenting out because I really onlyneed one tide location at a time #
-							<div class="row">
-								<div class="cell" data-title="Location">
-									<h4>Location 2</h4>
-								</div>
-								<div class="cell" data-title="Station">
-									<h4 id="station"></h4>
-								</div>
-								<div class="cell" data-title="High Tide">
-									<h4>2:00 AM</h4>
-								</div>
-								<div class="cell" data-title="Low Tide">
-									<h4>3:00 AM</h4>
+								<div class="cell" data-title="Wind Speed">
+									<h4 class="alert" id="windSpeed"></h4>
 								</div>
 							</div>
-
-							<div class="row">
-								<div class="cell" data-title="Location">
-									<h4>Location 3</h4>
-								</div>
-								<div class="cell" data-title="Station">
-									<h4 id="station"></h4>
-								</div>
-								<div class="cell" data-title="High Tide">
-									<h4>4:00 AM</h4>
-								</div>
-								<div class="cell" data-title="Low Tide">
-									<h4>5:00 AM</h4>
-								</div>
-							</div>-->
 						</div>
 						<br />
 						<iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSdLyjntiwKyd2aBUd7hEXoeJKwZYyaNYpBoqtK0wV3IYxitqA/viewform?embedded=true" height="800px" width="900px" frameborder="0" marginheight="0" marginwidth="0">Loading...

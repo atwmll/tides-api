@@ -6,6 +6,15 @@
 
 /* START my code */
 
+.center-form {
+	text-align: center;
+}
+
+.left-form {
+	display: inline-block;
+	text-align: left;
+}
+
 hr {
 	height: 2px;
 	color: #ffffff;
@@ -27,7 +36,7 @@ hr {
 	text-align: center;
 }
 
-.time {
+.alert {
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 18px;
 	color: red;
@@ -69,27 +78,8 @@ ul, li {
 
 
 /* ------------------------------------ */
-input {
-  display: block;
-	outline: none;
-	border: none !important;
-}
-
-textarea {
-  display: block;
-  outline: none;
-}
-
-textarea:focus, input:focus {
-  border-color: transparent !important;
-}
 
 /* ------------------------------------ */
-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
 
 button:hover {
 	cursor: pointer;
