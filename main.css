@@ -6,18 +6,24 @@
 
 /* START my code */
 
+.weatherButton {
+	text-align: center;
+}
+
 .center-form {
 	text-align: center;
 }
 
 .left-form {
-	display: inline-block;
+	/*display: inline-block;*/
+	display: flex;
 	text-align: left;
 }
 
 hr {
 	height: 2px;
 	color: #ffffff;
+	display: flex;
 }
 
 .title {
@@ -25,21 +31,25 @@ hr {
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 50px;
 	text-align: center;
+	display: flex;
 }
 
 .small-title {
 	color: #a00000;
 	text-align: center;
+	display: flex;
 }
 
 .form {
 	text-align: center;
+	display: flex;
 }
 
 .alert {
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 18px;
 	color: red;
+	display: flex;
 }
 
 /* END my code */
@@ -96,6 +106,7 @@ iframe {
 .limiter {
   width: 100%;
   margin: 0 auto;
+	display: flex;
 }
 
 .container-table100 {

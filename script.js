@@ -26,7 +26,7 @@ $.ajax(settings).done(function (response) {
   $("#currentLocation").append(loc);
 
   // Temperature
-  var temp = response.main.temp;
+  var temp = response.main.temp_max;
   $("#currentTemp").append(temp);
 
   // Weather

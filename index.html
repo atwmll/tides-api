@@ -7,57 +7,18 @@
 		<link rel="icon" type="image/png" href="favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<script type="text/javascript" src="script.js"></script>
-			<div class="limiter">
-				<div class="container-table100">
-					<div class="wrap-table100">
-						<p class="title">Weather Powered by OpenWeatherMap.org</p>
-						<p class="small-title">(Class Project - Work-in-progress)</p>
-						<hr>
-						<br />
-						<div class="table">
-							<div class="row header">
-								<div class="cell">
-									Location
-								</div>
-								<div class="cell">
-									Temperature
-								</div>
-								<div class="cell">
-									Conditions
-								</div>
-								<div class="cell">
-									Description
-								</div>
-								<div class="cell">
-									Wind (MPH)
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="cell" data-title="Location">
-									<h4 class="alert" id="currentLocation"></h4>
-								</div>
-								<div class="cell" data-title="Temperature">
-									<h4 class="alert" id="currentTemp"></h4>
-								</div>
-								<div class="cell" data-title="Conditions">
-									<h4 class="alert" id="currentWeather"></h4>
-								</div>
-								<div class="cell" data-title="Weather description">
-									<h4 class="alert" id="weatherDesc"></h4>
-								</div>
-								<div class="cell" data-title="Wind Speed">
-									<h4 class="alert" id="windSpeed"></h4>
-								</div>
-							</div>
-						</div>
-						<br />
-						<iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSdLyjntiwKyd2aBUd7hEXoeJKwZYyaNYpBoqtK0wV3IYxitqA/viewform?embedded=true" height="800px" width="900px" frameborder="0" marginheight="0" marginwidth="0">Loading...
-					</iframe>
+		<div class="limiter">
+			<div class="container-table100">
+				<div class="wrap-table100">
+					<p class="title">Weather Powered by OpenWeatherMap.org</p>
+					<p class="small-title">Search your ZIP code to find weather for your area! Location shown is approximate and is not as precise as other higher-end weather services. (E.g. some parts of Delaware County, PA show up as Philadelphia, PA.) This uses the FREE Open Weather Map API which still tells accurate weather. Click the button below to continue.</p>
+					<hr>
+					<br />
+					<div class="weatherButton">
+						<input type="button" name="weather button" value="Search Location" onclick="location.href='weatherdata.html'">
+					</div>
 				</div>
 			</div>
 		</div>

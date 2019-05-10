@@ -1,3 +1,3 @@
-# Tide Chart website using NOAA API #
+# Weather website using Open Weather Map API #
 
-This is a work-in-progress
+FINAL submission for a grade -- Will continue development eventually.
